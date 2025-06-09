@@ -9,7 +9,7 @@ public class SkipMultiplesOfFive_Homework {
 			if(i % 5 == 0) { //checks if the number is divisible by 5
 				continue; //skips the current iteration
 			}
-			System.out.println(+i);
+			System.out.println(i);
 		}
 	}
 
