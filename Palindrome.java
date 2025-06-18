@@ -1,22 +1,23 @@
-package FirstPackage;
+package Strings;
+
+import java.util.Scanner;
 
 public class Palindrome {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=123321;
-		int reverse=0;
-		int original=n;
-		while(n!=0) {
-			int digit=n%10;
-			reverse=reverse*10+digit;
-			n=n/10;
+		Scanner sc= new Scanner(System.in);
+		String str=sc.next();
+		String reverse = "";
+		for(int i=str.length()-1;i>=0;i--) {
+			reverse= reverse+str.charAt(i);
 		}
-		if(reverse==original) {
-			System.out.println("Palindrome");
+		if(str.equals(reverse)) {
+			System.out.println("true");
 		}else {
-			System.out.println("Not a palindrome");
+			System.out.println("false");
 		}
+		sc.close();
 	}
 
 }
